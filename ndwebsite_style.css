@@ -1,0 +1,220 @@
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /*html > body > img:first-child { display: block; margin: 0 auto; }*/
+
+
+		p {
+			text-align: center;
+		}
+
+        body{ margin:0px; }
+        
+        .fc > * {
+            margin:2px;
+
+            /*background-color:lightgray;*/
+            border-radius: 0px;
+        }
+        
+        /* initialize flexbox container and flexbox items */
+        .fc { 
+            
+
+  			/*flex-wrap: nowrap;*/
+            
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-flex-flow: column wrap;
+            flex-flow: column wrap;
+            -webkit-align-content: flex-start;
+            align-content: flex-start;
+
+        }
+        
+        .fc > * { 
+            flex: 1; 
+            /*max-width:calc(100vw - 220px);*/ 
+            box-sizing: border-box; 
+        }
+        
+        
+        .fc header,
+        .fc footer {
+        /*    margin:0px;
+            flex: 1 1 100vw;  */
+           text-align: center;
+           min-width: 100vw;
+           background-color: rgb(120, 189, 127);
+           padding: 5px;
+            
+        }
+        .fc header {
+        	font-size: 16pt;
+        	position: fixed;
+        	top: 0;
+        	
+        }
+        .fc footer {
+        	font-size: 10pt;
+        }
+        
+        .fc { 
+            min-height: 100vh;
+        } 
+
+        
+        .row {
+        	flex: 1 1 auto;
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+        	box-sizing: content-box;
+            max-width: 800px;
+        }
+        #welcome {
+        	text-align: center;
+        }
+
+        #contactinfo {
+        	text-align: center;
+        }
+        .underline {
+        	text-decoration: underline;
+        }
+
+        .paragraph {
+        	text-align: center;
+        	max-width: 950px;
+        }
+
+        #infographic {
+        	margin: 10px;
+        	width: 100%;
+        	max-width: 100vw;	
+        }
+
+        .fc2 > * {
+            margin:2px;
+
+            /*background-color:lightgray;*/
+            border-radius: 0px;
+        }
+        
+        /* initialize flexbox container and flexbox items */
+        .fc2 { 
+            
+
+            /*flex-wrap: nowrap;*/
+            
+           display: -webkit-flex;
+           display: flex;
+           -webkit-align-items: center;
+           align-items: center;
+           -webkit-justify-content: center;
+           justify-content: center;
+           /* You can set flex-wrap and flex-direction individually */
+           -webkit-flex-direction: row;
+           flex-direction: row;
+           -webkit-flex-wrap: wrap;
+           flex-wrap: wrap;
+           /* Or do it all in one line with flex flow */
+           -webkit-flex-flow: row wrap;
+           flex-flow: row wrap;
+           /* tweak the where items line up on the row */
+           /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+           -webkit-align-content: flex-start;
+           align-content: flex-start;
+
+        }
+             
+        
+        .fc2 header,
+        .fc2 footer {
+        /*    margin:0px;
+            flex: 1 1 100vw;  */
+           text-align: center;
+           min-width: 100vw;
+           background-color: rgb(120, 189, 127);
+           padding: 5px;
+            
+        }
+        .fc2 header {
+            font-size: 16pt;
+            position: fixed;
+            top: 0;
+            
+        }
+        .fc2 footer {
+            font-size: 10pt;
+
+        }
+        
+        .fc2 { 
+            min-height: 100vh;
+        }
+
+        .homebanner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin-top: 60px;
+            text-align: center;
+            min-width: 100vw;
+        }
+
+        .image {
+            margin: 10px;
+        }
+
