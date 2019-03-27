@@ -239,7 +239,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Set a background color */
 body {
-  background-color: #fff;
+  background-color: inherit;
   font-family: "Times New Roman", Georgia, Serif;
 }
 
