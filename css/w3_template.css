@@ -239,8 +239,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Set a background color */
 body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
+  background-color: #fff;
+  font-family: "Times New Roman", Georgia, Serif;
 }
 
 /* The actual timeline (the vertical ruler) */
