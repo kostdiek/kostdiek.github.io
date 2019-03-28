@@ -264,7 +264,7 @@ body {
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+  padding: 2px 40px 2px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -329,7 +329,7 @@ body {
 
 /* The actual content */
 .content {
-  padding: 10px 10px 10px 10px;
+  padding: 0px 10px 0px 10px;
   background-color: #85B886;
   position: relative;
   border-radius: 6px;
