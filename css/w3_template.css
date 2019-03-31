@@ -278,7 +278,7 @@ body {
   height: 25px;
   right: -12px;
   background-color: #85B886;
-  border: 4px solid #1D8ECA;
+  border: 2px solid #1D8ECA;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -299,13 +299,13 @@ body {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 27px;
   width: 0;
-  z-index: 1;
-  right: 30px;
+  /*z-index: 1;*/
+  right: 10px;
   border: medium solid #85B886;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #85B886;
+  border-width: 2px 20px 2px 20px;
+  border-color:  #85B886;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -313,13 +313,13 @@ body {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 27px;
   width: 0;
-  z-index: 1;
-  left: 30px;
+  /*z-index: 1;*/
+  left: 10px;
   border: medium solid #85B886;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #85B886 transparent transparent;
+  border-width: 2px 20px 2px 20px;
+  border-color:  #85B886;
 }
 
 /* Fix the circle for containers on the right side */
