@@ -248,6 +248,7 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  z-index: -1;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -281,7 +282,7 @@ body {
   border: 2px solid #1D8ECA;
   top: 15px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Place the container to the left */
@@ -303,9 +304,9 @@ body {
   width: 0;
   /*z-index: 1;*/
   right: 10px;
-  border: medium solid #85B886;
+  border: medium solid #1D8ECA;
   border-width: 2px 20px 2px 20px;
-  border-color:  #85B886;
+  border-color:  #1D8ECA;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -317,9 +318,9 @@ body {
   width: 0;
   /*z-index: 1;*/
   left: 10px;
-  border: medium solid #85B886;
+  border: medium solid #1D8ECA;
   border-width: 2px 20px 2px 20px;
-  border-color:  #85B886;
+  border-color:  #1D8ECA;
 }
 
 /* Fix the circle for containers on the right side */
