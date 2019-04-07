@@ -405,9 +405,9 @@ body {
 }
 
 .bar-graph .bar-graph-axis {
-  -webkit-flex: 1 1 8%;
-      -ms-flex: 1 1 8%;
-          flex: 1 1 8%;
+  -webkit-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -425,6 +425,12 @@ body {
   color: #8a8a8a;
   position: relative;
   border-bottom: 1px dashed #8a8a8a;
+}
+
+.bar-graph-legend{
+  margin:0;
+  background-color: inherit;
+  position: relative;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -484,8 +490,8 @@ body {
 }
 
 .bar-graph .bar.primary {
-  border: 1px solid #1779ba;
-  background: linear-gradient(#2196e3, #1779ba 70%);
+  border: 1px solid #85B886;
+  background: linear-gradient(#85B886, #85B886 70%);
 }
 
 .bar-graph .bar.secondary {
@@ -494,16 +500,16 @@ body {
 }
 
 .bar-graph .bar.success {
-  border: 1px solid #3adb76;
-  background: linear-gradient(#65e394, #3adb76 70%);
+  border: 1px solid #990099;
+  background: linear-gradient(#990099, #990099 70%);
 }
 
 .bar-graph .bar.warning {
-  border: 1px solid #ffae00;
-  background: linear-gradient(#ffbe33, #ffae00 70%);
+  border: 1px solid #1D8ECA;
+  background: linear-gradient(#1D8ECA, #1D8ECA 70%);
 }
 
 .bar-graph .bar.alert {
-  border: 1px solid #cc4b37;
-  background: linear-gradient(#d67060, #cc4b37 70%);
+  border: 1px solid #ffff80;
+  background: linear-gradient(#ffff80, #ffff80 70%);
 }
