@@ -237,6 +237,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #F4EBD0;
+  --ink: #2A241F;
+  --accent: #D4AF37;
+  --muted: #6B705C;
+}
+
 /* Set a background color */
 body {
   background-color: inherit;
@@ -256,7 +263,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #4C513D;
+  background-color: var(--muted);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -279,8 +286,8 @@ body {
   width: 25px;
   height: 25px;
   right: -12px;
-  background-color: #4C513D;
-  border: 2px solid #633c63;
+  background-color: var(--muted);
+  border: 2px solid var(--accent);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -306,9 +313,9 @@ body {
   width: 0;
   /*z-index: 1;*/
   right: 0px;
-  border: medium solid #633c63;
+  border: medium solid var(--accent);
   border-width: 2px 20px 2px 20px;
-  border-color:  #633c63;
+  border-color: var(--accent);
   opacity: 0.75;
 }
 
@@ -321,9 +328,9 @@ body {
   width: 0;
   /*z-index: 1;*/
   left: 0px;
-  border: medium solid #633c63;
+  border: medium solid var(--accent);
   border-width: 2px 20px 2px 20px;
-  border-color:  #633c63;
+  border-color: var(--accent);
   opacity: 0.75;
 }
 
@@ -335,10 +342,10 @@ body {
 /* The actual content */
 .content {
   padding: 0px 10px 0px 10px;
-  background-color: #4C513D;
+  background-color: var(--ink);
   position: relative;
   border-radius: 6px;
-  opacity: 0.75;
+  opacity: 0.95;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -358,9 +365,9 @@ body {
 /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--bg);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--bg) transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
@@ -422,26 +429,26 @@ body {
 .bar-graph .bar-graph-label {
   margin: 0;
   background-color: inherit;
-  color: #8a8a8a;
+  color: var(--muted);
   position: relative;
-  border-bottom: 1px dashed #8a8a8a;
+  border-bottom: 1px dashed var(--muted);
 }
 
 /* basic positioning */
 .legend { list-style: none;
           float: center;}
 .legend li { float: left; margin-right: 10px; }
-.legend span { border: 1px solid #ccc;
+.legend span { border: 1px solid rgba(42, 36, 31, 0.2);
               float: left;
               width: 12px;
               height: 12px;
               margin: 2px;
               text-align: center;}
 /* your colors */
-.legend .current { background-color: #4C513D; }
-.legend .offnon { background-color: #f2f28c; }
-.legend .beenawhile { background-color: #633c63; }
-.legend .longwhile { background-color: #213C57; }
+.legend .current { background-color: var(--muted); }
+.legend .offnon { background-color: var(--accent); }
+.legend .beenawhile { background-color: #8a7a68; }
+.legend .longwhile { background-color: var(--ink); }
 
 @media print, screen and (min-width: 40em) {
   .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
@@ -489,33 +496,33 @@ body {
 
 .bar-graph .description {
   font-weight: 800;
-  opacity: 0.5;
+  opacity: 0.85;
   text-transform: uppercase;
   width: 100%;
   font-size: 14px;
   bottom: 5px;
   position: absolute;
-  font-size: 1rem;
+  font-size: 0.75rem;
   overflow-wrap: normal;
   overflow: auto;
 }
 
 .bar-graph .bar.current {
-  border: 1px solid #4C513D;
-  background: linear-gradient(#4C513D, #4C513D 70%);
+  border: 1px solid var(--muted);
+  background: linear-gradient(var(--muted), var(--muted) 70%);
 }
 
 .bar-graph .bar.offnon {
-  border: 1px solid #f2f28c;
-  background: linear-gradient(#f2f28c, #f2f28c 70%);
+  border: 1px solid var(--accent);
+  background: linear-gradient(var(--accent), var(--accent) 70%);
 }
 
 .bar-graph .bar.beenawhile {
-  border: 1px solid #633c63;
-  background: linear-gradient(#633c63, #633c63 70%);
+  border: 1px solid #8a7a68;
+  background: linear-gradient(#8a7a68, #8a7a68 70%);
 }
 
 .bar-graph .bar.longwhile {
-  border: 1px solid #213C57;
-  background: linear-gradient(#213C57, #213C57 70%);
+  border: 1px solid var(--ink);
+  background: linear-gradient(var(--ink), var(--ink) 70%);
 }
