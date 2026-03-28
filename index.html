@@ -85,7 +85,8 @@
 					<img src="images/Headshot_updated_square.jpg" alt="Profile photo of Karen Ostdiek" width="280" height="350">
 				</figure>
 				<div class="about-body">
-					<p>Hello and welcome. I’m a Principal Business Intelligence Analyst based in Watertown, Massachusetts, focused on marketing and product analytics. I build attribution models, ROI reporting, and the Snowflake/dbt pipelines that make those answers reproducible.</p>
+					<p>Hello and welcome. I’m a Principal Business Intelligence Analyst based in Boston, Massachusetts, focused on marketing and product analytics—and I’ve been taking on more machine learning work as well. I build attribution models, ROI reporting, and the Snowflake/dbt pipelines that make those answers reproducible.</p>
+					<p>One recent ML project: a <strong>social listening relevance</strong> model. Our feed had a lot of noise (for example, competitors whose names are common words). I used an LLM to generate truth labels on a subset of posts, then trained a <strong>TF–IDF + logistic regression</strong> classifier to label the rest of the dataset and score new data as it arrives—so the team gets cleaner signal without hand-labeling everything.</p>
 					<p>Before my current role, I worked in health-plan risk adjustment—reconciliation, regulated submissions, and analytics in Snowflake, dbt, Airflow, and Python. My foundation is a Ph.D. in nuclear physics from Notre Dame: experimental design, careful measurement, and communicating results to both experts and general audiences.</p>
 					<p>Most of my recent work lives in private repositories; <a href="#projects">below</a> you’ll find anonymized project summaries. My public code is on <a href="https://github.com/kostdiek">GitHub</a>. I’m always happy to connect on <a href="https://www.linkedin.com/in/karenostdiek">LinkedIn</a> or via the contact form.</p>
 					<p>Thank you for visiting.</p>
@@ -108,26 +109,26 @@
 					<div class="bar-graph-label">Enough to be dangerous</div>
 					<div class="bar-graph-label">Just the Basics</div>
 				</li>
-				<li class="bar current" style="height: 100%;" title="SQL">
-					<div class="description">SQL</div>
+				<li class="bar current bar--knowitall" title="SQL and Snowflake">
+					<div class="description">SQL /<br>Snowflake</div>
 				</li>
-				<li class="bar current" style="height: 100%;" title="Snowflake">
-					<div class="description">Snowflake</div>
-				</li>
-				<li class="bar current" style="height: 92%;" title="dbt">
+				<li class="bar current" style="height: 78%;" title="dbt">
 					<div class="description">dbt</div>
 				</li>
 				<li class="bar current" style="height: 78%;" title="Git / GitHub">
-					<div class="description">Git / GitHub</div>
+					<div class="description">Git /<br>GitHub</div>
 				</li>
 				<li class="bar offnon" style="height: 55%;" title="Python">
 					<div class="description">Python</div>
 				</li>
-				<li class="bar current" style="height: 72%;" title="Excel">
+				<li class="bar offnon" style="height: 55%;" title="Machine Learning">
+					<div class="description">ML</div>
+				</li>
+				<li class="bar beenawhile" style="height: 72%;" title="Excel">
 					<div class="description">Excel</div>
 				</li>
-				<li class="bar offnon" style="height: 48%;" title="Sisense">
-					<div class="description">Sisense</div>
+				<li class="bar offnon" style="height: 32%;" title="Tableau">
+					<div class="description">Tableau</div>
 				</li>
 				<li class="bar beenawhile" style="height: 88%;" title="SAS">
 					<div class="description">SAS</div>
@@ -149,6 +150,20 @@
 			<p class="hero-line">Representative themes from my work. Details are anonymized where code and data are proprietary.</p>
 
 			<div class="project-grid">
+				<article class="project-card">
+					<h3>Social listening relevance (ML)</h3>
+					<p class="project-meta">Noisy text · LLM labels · classical ML at scale</p>
+					<p>Social listening data was cluttered with irrelevant mentions—e.g. competitors whose names are common words.</p>
+					<p>Created gold-standard labels on a subset using an LLM, then trained a TF–IDF + logistic regression model to classify the full historical set and score incoming posts automatically.</p>
+					<p><strong>Outcome:</strong> Higher-precision relevance signal for reporting and follow-up without labeling every row by hand.</p>
+					<div class="tag-row">
+						<span class="tag">Python</span>
+						<span class="tag">scikit-learn</span>
+						<span class="tag">TF–IDF</span>
+						<span class="tag">LLM labeling</span>
+					</div>
+				</article>
+
 				<article class="project-card">
 					<h3>Marketing ROI &amp; attribution</h3>
 					<p class="project-meta">Problem → Approach → Outcome</p>
@@ -188,8 +203,6 @@
 					</div>
 				</article>
 			</div>
-
-			<p class="project-note"><strong>Private GitHub?</strong> You can still show impact: describe problems, methods, and outcomes on this site; add redacted screenshots as static images; or publish a tiny public repo with <em>synthetic</em> data and generic patterns—never employer code or confidential figures without approval.</p>
 		</section>
 
 		<hr class="section-rule">
@@ -231,7 +244,7 @@
 					<div class="content">
 						<h4>Senior Risk Adjustment Data Analyst</h4>
 						<p>Devoted Health Plans · Remote / Watertown, MA</p>
-						<p>February 2020 – September 2021</p>
+						<p>August 2019 – September 2021</p>
 						<ul>
 							<li>Performed error reconciliation on data submitted for Medicare Advantage regulations, impacting month-over-month revenue.</li>
 							<li>Built and maintained analytical tables in Snowflake within a pipeline using GitHub, CircleCI, Airflow, and dbt.</li>
@@ -311,7 +324,7 @@
 		<section class="section-block w3-container" id="contact" aria-labelledby="contact-heading">
 			<p class="section-kicker">Contact</p>
 			<h2 id="contact-heading">Get in touch</h2>
-			<p>You can email <a href="mailto:kmostdiek@gmail.com">kmostdiek@gmail.com</a>, or send a message here:</p>
+			<p>Send a message below:</p>
 
 			<form class="contact-form" action="https://formspree.io/kmostdiek@gmail.com" method="POST">
 				<p class="honeypot">

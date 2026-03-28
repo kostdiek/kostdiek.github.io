@@ -342,9 +342,18 @@ body.site {
   border: 1px solid rgba(42, 36, 31, 0.12);
 }
 
+/* When the sidebar shows the headshot, hide the duplicate in About and use one full-width column so body text matches the Skills chart width. */
 @media (min-width: 993px) {
   .about-photo-wrap {
     display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-line {
+    max-width: none;
   }
 }
 
@@ -374,8 +383,47 @@ body.site {
 
 @media (max-width: 700px) {
   ul.bar-graph {
-    min-width: 520px;
+    min-width: 540px;
   }
+}
+
+/* Include padding in bar height so 100% bars don’t extend past the top grid line */
+.bar-graph li {
+  box-sizing: border-box;
+}
+
+/* Top tier: 100% of the column reads past the “Know-it-all” dashed line (border + flex rounding); cap height */
+.bar-graph .bar--knowitall {
+  height: 97% !important;
+  align-self: flex-end;
+}
+
+/* Bar chart: more width per bar + calmer labels (axis was ~25% of row) */
+.bar-graph .bar-graph-axis {
+  flex: 1 1 17%;
+  min-width: 6.75rem;
+}
+
+.bar-graph > li:not(.bar-graph-axis) {
+  flex: 1 1 10.5%;
+  max-width: none;
+  margin-right: 0.65%;
+}
+
+.bar-graph > li:not(.bar-graph-axis):last-child {
+  margin-right: 0;
+}
+
+.bar-graph .bar .description {
+  font-size: 0.65rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding: 0 4px 4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Skills bar chart label contrast */
@@ -507,20 +555,6 @@ body.site {
   border-radius: 4px;
   background: rgba(107, 112, 92, 0.2);
   color: var(--ink);
-}
-
-.project-note {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 1.5rem 0 0;
-  padding: 1rem;
-  border-left: 3px solid var(--accent);
-  background: rgba(212, 175, 55, 0.12);
-}
-
-.project-note a {
-  color: var(--ink);
-  font-weight: 600;
 }
 
 /* Contact */
